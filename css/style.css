@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white:#ffffff;
+    --text-color:#999999;
+    --hading-font:'jost';
+    --text-font:'poppins';
+    --border:0.5px solid #fff;
+
+}
+body{
+    background-color: #000;
+}
+section{
+    /* width: 770px; */
+    margin: 0 auto;
+    padding: 80px 0px 0px 0px;
+}
+
+img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+img:hover{
+    transform: scale(0.9);
+}
+h4{
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 24PX;
+    font-family: var(--hading-font);
+    text-transform: capitalize;
+    text-align: end;
+}
+.img-section{
+    /* width: 100%; */
+    /* position: fixed; */
+    /* top: 50%;
+    left: 100px; */
+    /* transform: translateY(-50%); */
+}
+@media(min-width:1200px){
+    .img-section{
+        width: 25%;
+        position: fixed;
+        top: 50%;
+        left: 100px; 
+        transform: translateY(-50%);
+    }
+}
+.text-section{
+
+}
+.img-section .card{
+    background-color: transparent;
+    border: 0.5px solid #fff;
+    border-radius:30px;
+    overflow: hidden;
+    width: 100%;
+}
+.img-section .card img{
+    border-radius: 30px;
+    padding: 15px;
+}
+.img-section .card-title{
+    color:white;
+    font-family:var(--hading-font);
+}
+.img-section .card-text{
+    font-family: var(--text-font);
+    color: white;
+}
+.social-media a{
+    width: 52px;
+    height: 36px;
+    font-size: 18px;
+    border: 0.5px solid #fff;
+    border-radius: 50px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+}
+.section-title{
+    font-size: 12px;
+    padding: 8px 14px;
+    border-radius: 30px;
+    border: var(--border);
+    color:var(--white);
+    font-family: var(--text-font);
+    display: inline-block;
+}
+h2 , h1{
+    font-family: var(--hading-font);
+    font-size: 71px;
+    font-weight: 300;
+    line-height: 90px;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+h2{
+    font-size: 42px;
+    line-height: 60px;
+}
+p{
+    font-size: 16px;
+    color:var(--text-color);
+    line-height: 2;
+}
+.myproject{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    border: var(--border);
+    border-radius: 50%;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.myproject img{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transform: translate(-50% ,-50%);
+    animation: animName 6s linear infinite;
+}
+@keyframes animName {
+    0%{
+       transform:  translate(-50% , -50%) rotate(0deg);
+      }
+   100%{
+       transform:  translate(-50% , -50%)rotate(360deg);
+      }
+   }
+.myproject i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:var(--white);
+    transform: translate(-50% ,-50%);
+    font-size: 22px;
+}
+.education>*{
+    margin-bottom:30px;
+}
+.education .date{
+    color: var(--text-color);
+}
+.education p{
+    margin-bottom: 0;
+    color:var(--white);
+    text-transform:capitalize;
+    font-size: 18px;
+}
+.education a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.services .card{
+    background-color: transparent;
+    border:var(--border);
+    margin-bottom:30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.services img{
+    padding: 15px;
+    border-radius: 30px;
+    height: 200px;
+    object-fit: cover;
+}
+.services h5{
+    color: var(--white);
+    font-family: var(--hading-font);
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.services p{
+    font-size: 16px;
+}
+.advantages-img{
+    display: inline-block;
+}
+.advantages-img img{
+    display: block;
+    margin-bottom: 15px;
+    line-height: 170px;
+    overflow: hidden;
+}
+.advantages-img .row>*{
+    color: var(--text-color);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.protfolio p span{
+    color: var(--white);
+    font-weight: 500;
+}
+.img-box{
+    margin-bottom: 24px;
+    display: inline-block;
+}
